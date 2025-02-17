@@ -1,0 +1,15 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    /* gap: 100px; */
+}

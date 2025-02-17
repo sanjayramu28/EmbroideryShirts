@@ -1,0 +1,95 @@
+.home {
+    /* background-image: url("../../../../public/Assests/home-bgq.png"); */
+    background-image: url("https://img.freepik.com/free-photo/pink-yellow-plain_53876-96060.jpg?ga=GA1.1.1161449929.1704814302&semt=ais_hybrid");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+}
+
+.home-contents {
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    align-items: center;
+    height: 75%;
+    text-wrap: wrap;
+    font-family: "Dancing Script", serif;
+    color: white;
+    text-shadow: 18px 19px 15px black;
+    font-size: 50px;
+    font-weight: 700;
+    top: 20%;
+}
+
+.home-banner {
+    /* position: relative;
+    top: 20%; */
+    margin-top: 20px;
+
+}
+
+.home-banner p {
+    display: flex;
+    justify-content: center;
+    font-family: "Dosis", serif;
+    font-size: 30px;
+}
+
+.hmb {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    font-family: "Dosis", serif;
+    font-size: 30px;
+}
+
+/* From Uiverse.io by cssbuttons-io */
+.hmb button {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+.hmb button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.hmb button:hover {
+    color: #fff;
+}
+
+.hmb button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+
+.hmb button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.hmb button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+}
