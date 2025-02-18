@@ -3,6 +3,7 @@ import Designproces from '../../../../public/Assests/Designprocess.jpg';
 import processthreads from '../../../../public/Assests/processthreads.jpg';
 import processStitching from '../../../../public/Assests/processStitching.jpg';
 import processFinish from '../../../../public/Assests/processFinish.jpg';
+import whyEmbroidery1 from '../../../../public/Assests/whyEmbroidery1.jpg';
 import Image from 'next/image';
 const Process = () => {
     return (
@@ -47,7 +48,7 @@ const Process = () => {
                         <div className='row'>
                             <div className='col-md-7'>
                                 <p >3. Stitching Process – Bringing Designs to Life</p>
-                                    <p className='ms-3'>Depending on the design complexity, we use:</p>
+                                <p className='ms-3'>Depending on the design complexity, we use:</p>
                                 <ul className='ms-5'>
                                     <li>Hand Embroidery – Perfect for intricate, one-of-a-kind designs</li>
                                     <li>Machine Embroidery – Ideal for large-scale production</li>
@@ -59,9 +60,9 @@ const Process = () => {
                             </div>
                             <div className='col-md-4 d-flex justify-content-center  align-items-center'>
                                 <Image src={processStitching} alt="Process Stitching" className='design-img' />
-                                </div>
+                            </div>
                         </div>
-                        <hr/>
+                        <hr />
                         <div className='row'>
                             <div className='col-md-5 d-flex justify-content-center  align-items-center'>
                                 <Image src={processFinish} alt="Process Finish" className='design-img' />
@@ -78,8 +79,47 @@ const Process = () => {
                                 </ul>
                             </div>
                         </div>
-                        <hr/>
+                        <hr />
                     </ol>
+                    <div>
+                    <h1 className='d-flex justify-content-center'>Why Choose Embroidery?</h1>
+                    <div className='row'>
+
+                    <ol className='col-md-7'>
+                        <h1> 1. Long-Lasting & Durable</h1>
+                        <ul className='ms-3'>
+                            <li>Unlike printed designs that may fade, crack, or peel over time, embroidery remains intact and vibrant for years.</li>
+                            <li>Thread-based designs withstand washing, stretching, and daily wear better than ink-based prints.</li>
+                        </ul>
+                        <h1>2. Unique Texture & Premium Look</h1>
+                        <ul className='ms-3'>
+                            <li>Embroidery gives T-shirts a 3D texture, making the designs feel as good as they look.</li>
+                            <li>Adds a luxurious, handcrafted touch that elevates any T-shirt.</li>
+                        </ul>
+                        <h1>
+                        3. Eco-Friendly & Sustainable
+                        </h1>
+                        <ul className='ms-3'>
+                            <li>Unlike screen printing, which uses chemical inks, embroidery relies on threads and needles, making it a safer and more sustainable option.</li>
+                            <li>No harmful dyes, no fading ink, and minimal waste.</li>
+                        </ul>
+                        <h1>4. Custom & Artistic Appeal</h1>
+                        <ul className='ms-3'>
+                            <li>Every embroidered design has a handcrafted feel, making each piece one-of-a-kind.</li>
+                            <li>Unlike generic prints, embroidery allows for intricate detailing, rich colors, and artistic depth.</li>
+                        </ul>
+                        <h1>5. No Cracking, Peeling, or Fading</h1>
+                        <ul className='ms-3'>
+                            <li>Printed T-shirts may lose vibrancy over time, but embroidery maintains its rich color and texture.
+                                <li>Perfect for long-term wear, making it ideal for fashion, branding, and personal expression.</li>
+                            </li>
+                        </ul>
+                    </ol>
+                    <div className='col-md-5'>
+                        <Image src={whyEmbroidery1} alt="Why Embroidery" className=' w-100 h-100' />  
+                    </div>
+                    </div>
+                    </div>
                 </div>
                 {/* <p>Process</p> */}
             </div>
