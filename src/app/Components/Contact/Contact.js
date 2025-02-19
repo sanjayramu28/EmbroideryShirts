@@ -1,4 +1,7 @@
+'use client'
+
 import './Contact.css'
+
 import Connect from '../../../../public/Assests/Connect.jpg';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +12,7 @@ const Contact = () => {
         <>
             <div className=' container-fluid'>
                 {/* <h2>Let's Stay Connected</h2> */}
-                <h2 className='d-flex justify-content-center p-4'>Get in Touch with Us!</h2>
+                <h2 className='d-flex justify-content-center p-4' id='contact'>Get in Touch with Us!</h2>
                 <div className="row">
                     <div className='col-md-5 bg-light p-4'>
                         <Image src={Connect} alt="Connect" className='connect-img' />

@@ -4,7 +4,7 @@ import revol from '../../../../public/Assests/revol.png';
 const Hom = () => {
     return (
         <>
-            <div className="home p-5">
+            <div className="home p-5" id='home'>
                 <div className='home-contents p-5'>
                     {/* <Image src={revol} height={150}/> */}
                     <p style={{width:"900px"}}> Revolutionizing T-Shirt Art with Embroidery

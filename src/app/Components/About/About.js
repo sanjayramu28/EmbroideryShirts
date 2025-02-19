@@ -4,7 +4,7 @@ import Image from 'next/image';
 const About = () => {
     return (
         <>
-            <div className='d-flex justify-content-center mt-5' style={{ position: "relative" }}>
+            <div className='d-flex justify-content-center mt-5' id='about' style={{ position: "relative" }}>
                 <div className='about-header'>
                     <p>&nbsp;</p>
                     {/* <div className='material-symbols-outlined'></div> */}

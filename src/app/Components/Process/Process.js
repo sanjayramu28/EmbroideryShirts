@@ -1,3 +1,4 @@
+'use client'
 import './Process.css';
 import Designproces from '../../../../public/Assests/Designprocess.jpg';
 import processthreads from '../../../../public/Assests/processthreads.jpg';
@@ -8,7 +9,7 @@ import Image from 'next/image';
 const Process = () => {
     return (
         <>
-            <div className="process">
+            <div className="process" id='services'>
                 <div className='blurred p-4'>
                     <h1 className='d-flex p-3' style={{ justifyContent: "center" }}>Our Process</h1>
                     <h2>The Art Behind Every Stitch – Our Embroidery Process & Techniques:</h2>
