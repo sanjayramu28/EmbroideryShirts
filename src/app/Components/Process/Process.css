@@ -1,12 +1,50 @@
 .process{
     /* background-image: url("../../../../public/Assests/process.jpg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     font-family: "Asap", serif;
+    
 }
 
 .design-img{
     height: 100px;
     width: 100px;
     border-radius: 50px;
+}
+
+.process1,.process3{
+    transition: 1s ;
+    transform: translateX(-100%);
+}
+
+.process2,.process4{
+    transition: 1s;
+    transform: translateX(100%);
+}
+
+
+.servicesanimate .process1{
+    transform: translateX(0);
+}
+
+.servicesanimate .process2{
+    transform: translateX(0);
+}
+
+.servicesanimate .process3{
+    transform: translateX(0);
+}
+
+.servicesanimate .process4{
+    transform: translateX(0);
+}
+
+.whyembroidery{
+    transition: 0.5s ease-out;
+    color: white;
+    transform: rotateY(90deg)
+}
+.servicesanimate .whyembroidery{
+    transform: rotateY(0deg);
+    color: black;
 }

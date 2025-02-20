@@ -6,31 +6,51 @@ import './Navbar.css';
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState("");
 
-    useEffect(() => {
-        // Select all the sections (in this case, div elements with specific IDs)
-        const sections = document.querySelectorAll("div[id]");
-
-        // Create an IntersectionObserver instance
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    // Check if the section is more than 50% in view (threshold: 0.5)
-                    if (entry.isIntersecting) {
-                        setActiveSection(entry.target.id);
-                    }
-                });
-            },
-            { threshold: 0.5 } // Adjust the threshold to 50% visibility
-        );
-
-        // Observe each section
-        sections.forEach((section) => observer.observe(section));
-
-        // Cleanup the observer when the component is unmounted
-        return () => {
-            sections.forEach((section) => observer.unobserve(section));
-        };
-    }, []);
+        useEffect(() => {
+            const sections = document.querySelectorAll("div[id]");
+        
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            if (entry.target.id === "about") {
+                                entry.target.classList.add("aboutanimate");
+                            } else if (entry.target.id === "services") {
+                                addEventListener("scroll", () => {
+                                if(entry.target.id==="process1"){
+                                    console.log("process1")
+                                }
+                                else if(entry.target.id==="process2"){
+                                    console.log("process2")
+                                }
+                                else if(entry.target.id==="process3"){
+                                    console.log("process3")
+                                }
+                            });
+                                entry.target.classList.add("servicesanimate");
+                            }
+                            console.log("Active Section:", entry.target.id); // Debug log
+                            setActiveSection(entry.target.id);
+                        } 
+                        else if (entry.intersectionRatio > 0) {
+                            entry.target.classList.remove("aboutanimate"); // Remove if previously added
+                            entry.target.classList.remove("servicesanimate"); // Optional: remove when out of view
+                        }
+                    });
+                },
+                { 
+                    threshold: 0.1,  // **🔹 Changed from 0.3 to 0.1 for better small screen detection**
+                    rootMargin: "0px 0px -100px 0px" // **🔹 Helps detect the section earlier**
+                }
+            );
+        
+            sections.forEach((section) => observer.observe(section));
+        
+            return () => {
+                sections.forEach((section) => observer.unobserve(section));
+            };
+        }, []);
+        
 
     return (
         <div className="nav">
@@ -38,7 +58,7 @@ const Navbar = () => {
                 <a href="#home" className={activeSection === "home" ? "active" : ""}>
                     Home
                 </a>
-                <a href="#about" className={activeSection === "about" ? "active" : ""}>
+                <a href="#about" className={activeSection === "about" ? "active aboutanimate" : ""}>
                     About
                 </a>
                 <a href="#services" className={activeSection === "services" ? "active" : ""}>

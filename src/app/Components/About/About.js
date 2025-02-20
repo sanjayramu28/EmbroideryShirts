@@ -4,13 +4,10 @@ import Image from 'next/image';
 const About = () => {
     return (
         <>
-            <div className='d-flex justify-content-center mt-5' id='about' style={{ position: "relative" }}>
+        <div id='about'>
+            <div className='d-flex justify-content-center mt-5' style={{ position: "relative" }}>
                 <div className='about-header'>
                     <p>&nbsp;</p>
-                    {/* <div className='material-symbols-outlined'></div> */}
-                    {/* <span class="material-symbols-outlined">
-                        horizontal_rule
-                    </span> */}
                 </div>
                 <h1>
                     About Us
@@ -19,8 +16,8 @@ const About = () => {
                     
                     </div>
             </div>
-            <div className='row container-fluid mt-5 mb-5'>
-                <div className='col-md-6'>
+            <div className='row container-fluid mt-5 mb-5 ' style={{overflow:"hidden"}}>
+                <div className='col-md-6 animating'>
                     <div className='blurred'>
                         <div className='ms-4'>
                             <h1 className='pt-5'>Redefining T-Shirt Art – Where Threads Tell a Story</h1>
@@ -36,24 +33,17 @@ const About = () => {
                                 <li>Quality craftsmanship – Bringing art to life through stitches</li>
                                 <li>Eco-friendly approach – No chemical inks, just beautiful threadwork</li>
                                 <li>Supporting local artisans – Empowering local talent and preserving traditional craftsmanship</li>
-                            </ul>
-                            {/* <div>
-                                <h3 className='fw-bold'>OUR PROCESS:</h3>
-                                <p className='fs-3'>💡 Step 1: Designing – Sketching unique patterns</p>
-                                <p className='fs-3'>🧵 Step 2: Stitching – Embroidery done with precision & care</p>
-                                <p className='fs-3'>👕 Step 3: Final Touch – Transforming T-shirts into embroidered art</p>
-                            </div> */}
-                            {/* <li>Our Mission</li>
-                        <li>Our mission is to redefine T-shirt art by bringing the elegance of embroidery to the forefront. We aim to create a range of designs that are unique, timeless, and truly one-of-a-kind. Our vision is to transform the way people think about T-shirt art, making embroidery a staple in every wardrobe.</li> */}
+                            </ul>                            
                         </div>
                     </div>
                 </div>
-                <div className='col-md-6'>
+                <div className='col-md-6 aboutimganimate' >
                     <div className="about">
                         <Image src={ogabt} alt="Picture of the author" style={{ width: "100%", height: "100%" }} />
                     </div>
                 </div>
             </div>
+        </div>
         </>
     )
 }

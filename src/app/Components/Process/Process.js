@@ -9,13 +9,15 @@ import Image from 'next/image';
 const Process = () => {
     return (
         <>
-            <div className="process" id='services'>
+            <div className="process" id='services' style={{overflow:"hidden"}}>
                 <div className='blurred p-4'>
                     <h1 className='d-flex p-3' style={{ justifyContent: "center" }}>Our Process</h1>
                     <h2>The Art Behind Every Stitch – Our Embroidery Process & Techniques:</h2>
                     <p className='ms-5'>From concept to creation, every embroidered design follows a meticulous process that blends craftsmanship with creativity.</p>
                     <h1>Our Step-by-Step Process:</h1>
                     <ol>
+                        <div className='process1' id='process1'>
+
                         <p>1. Designing the Artwork</p>
                         <div className='row'>
                             <ul className='col-md-7 ms-5'>
@@ -27,9 +29,10 @@ const Process = () => {
                                 <Image src={Designproces} alt="Design Process" className='design-img' />
                             </div>
                         </div>
+                        </div>
                         <hr />
 
-                        <div className='row'>
+                        <div className='row process2'>
                             <div className='col-md-6 d-flex justify-content-center  align-items-center'>
                                 <Image src={processthreads} alt="Process Threads" className='design-img' />
                             </div>
@@ -46,7 +49,7 @@ const Process = () => {
                             </div>
                         </div>
                         <hr />
-                        <div className='row'>
+                        <div className='row process3'>
                             <div className='col-md-7'>
                                 <p >3. Stitching Process – Bringing Designs to Life</p>
                                 <p className='ms-3'>Depending on the design complexity, we use:</p>
@@ -64,7 +67,7 @@ const Process = () => {
                             </div>
                         </div>
                         <hr />
-                        <div className='row'>
+                        <div className='row process4'>
                             <div className='col-md-5 d-flex justify-content-center  align-items-center'>
                                 <Image src={processFinish} alt="Process Finish" className='design-img' />
                             </div>
@@ -83,43 +86,43 @@ const Process = () => {
                         <hr />
                     </ol>
                     <div>
-                    <h1 className='d-flex justify-content-center'>Why Choose Embroidery?</h1>
-                    <div className='row'>
+                        <h1 className='d-flex justify-content-center'>Why Choose Embroidery?</h1>
+                        <div className='row'>
 
-                    <ol className='col-md-7'>
-                        <h1> 1. Long-Lasting & Durable</h1>
-                        <ul className='ms-3'>
-                            <li>Unlike printed designs that may fade, crack, or peel over time, embroidery remains intact and vibrant for years.</li>
-                            <li>Thread-based designs withstand washing, stretching, and daily wear better than ink-based prints.</li>
-                        </ul>
-                        <h1>2. Unique Texture & Premium Look</h1>
-                        <ul className='ms-3'>
-                            <li>Embroidery gives T-shirts a 3D texture, making the designs feel as good as they look.</li>
-                            <li>Adds a luxurious, handcrafted touch that elevates any T-shirt.</li>
-                        </ul>
-                        <h1>
-                        3. Eco-Friendly & Sustainable
-                        </h1>
-                        <ul className='ms-3'>
-                            <li>Unlike screen printing, which uses chemical inks, embroidery relies on threads and needles, making it a safer and more sustainable option.</li>
-                            <li>No harmful dyes, no fading ink, and minimal waste.</li>
-                        </ul>
-                        <h1>4. Custom & Artistic Appeal</h1>
-                        <ul className='ms-3'>
-                            <li>Every embroidered design has a handcrafted feel, making each piece one-of-a-kind.</li>
-                            <li>Unlike generic prints, embroidery allows for intricate detailing, rich colors, and artistic depth.</li>
-                        </ul>
-                        <h1>5. No Cracking, Peeling, or Fading</h1>
-                        <ul className='ms-3'>
-                            <li>Printed T-shirts may lose vibrancy over time, but embroidery maintains its rich color and texture.
-                                <li>Perfect for long-term wear, making it ideal for fashion, branding, and personal expression.</li>
-                            </li>
-                        </ul>
-                    </ol>
-                    <div className='col-md-5'>
-                        <Image src={whyEmbroidery1} alt="Why Embroidery" className=' w-100 h-100' />  
-                    </div>
-                    </div>
+                            <div className='col-md-7 whyembroidery' >
+                                <h1> 1. Long-Lasting & Durable</h1>
+                                <ul className='ms-3'>
+                                    <li>Unlike printed designs that may fade, crack, or peel over time, embroidery remains intact and vibrant for years.</li>
+                                    <li>Thread-based designs withstand washing, stretching, and daily wear better than ink-based prints.</li>
+                                </ul>
+                                <h1>2. Unique Texture & Premium Look</h1>
+                                <ul className='ms-3'>
+                                    <li>Embroidery gives T-shirts a 3D texture, making the designs feel as good as they look.</li>
+                                    <li>Adds a luxurious, handcrafted touch that elevates any T-shirt.</li>
+                                </ul>
+                                <h1>
+                                    3. Eco-Friendly & Sustainable
+                                </h1>
+                                <ul className='ms-3'>
+                                    <li>Unlike screen printing, which uses chemical inks, embroidery relies on threads and needles, making it a safer and more sustainable option.</li>
+                                    <li>No harmful dyes, no fading ink, and minimal waste.</li>
+                                </ul>
+                                <h1>4. Custom & Artistic Appeal</h1>
+                                <ul className='ms-3'>
+                                    <li>Every embroidered design has a handcrafted feel, making each piece one-of-a-kind.</li>
+                                    <li>Unlike generic prints, embroidery allows for intricate detailing, rich colors, and artistic depth.</li>
+                                </ul>
+                                <h1>5. No Cracking, Peeling, or Fading</h1>
+                                <ul className='ms-3'>
+                                    <li>Printed T-shirts may lose vibrancy over time, but embroidery maintains its rich color and texture.
+                                        <li>Perfect for long-term wear, making it ideal for fashion, branding, and personal expression.</li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='col-md-5'>
+                                <Image src={whyEmbroidery1} alt="Why Embroidery" className=' w-100 h-100' />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 {/* <p>Process</p> */}

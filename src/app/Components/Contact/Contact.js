@@ -10,9 +10,9 @@ import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 const Contact = () => {
     return (
         <>
-            <div className=' container-fluid'>
+            <div className=' container-fluid' id='contact'>
                 {/* <h2>Let's Stay Connected</h2> */}
-                <h2 className='d-flex justify-content-center p-4' id='contact'>Get in Touch with Us!</h2>
+                <h2 className='d-flex justify-content-center p-4' >Get in Touch with Us!</h2>
                 <div className="row">
                     <div className='col-md-5 bg-light p-4'>
                         <Image src={Connect} alt="Connect" className='connect-img' />
