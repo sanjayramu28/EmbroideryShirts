@@ -71,7 +71,7 @@ const Navbar = () => {
 
     return (
         <>
-        <div className="container-fluid">
+        {/* <div className="container-fluid"> */}
 
         <div className="nav">
             <div className="navbar">
@@ -92,7 +92,7 @@ const Navbar = () => {
         <div className="bar" >
             <FontAwesomeIcon icon={faBars} onClick={()=>menubar()}  />
         </div>
-        </div>
+        {/* </div> */}
         </>
     );
 };
