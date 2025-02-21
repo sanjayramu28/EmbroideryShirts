@@ -18,7 +18,7 @@ const Contact = () => {
                         <Image src={Connect} alt="Connect" className='connect-img' />
                     </div>
                     <div className='col-md-7'>
-                        <p className='fs-3'>For quick inquiries, fill out the form below and we’ll get back to you as soon as possible!</p>
+                        <p className='fs-3'>Have questions? Let’s weave creativity together!</p>
 
                         <form className=' contact-form  w-75 p-3'>
                             <div className='w-100'>
@@ -34,6 +34,10 @@ const Contact = () => {
                                 <div style={{ position: "relative" }} className='mt-4'>
                                     <input type='number' id='phone' name='phone' placeholder=' ' />
                                     <label >Your Mobile Number</label>
+                                </div>
+                                <div style={{ position: "relative" }} className='mt-4'>
+                                    <p >Your Message</p>
+                                    <textarea id='message' name='message' className='w-100' placeholder=' '  />
                                 </div>
                             </div>
                             <div className='d-flex justify-content-center'>

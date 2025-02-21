@@ -2,10 +2,16 @@
 'use client';  // Add this line
 import { useEffect, useState } from "react";
 import './Navbar.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState("");
 
+    const menubar=()=>{
+        const element = document.querySelector(".navbar");
+        element.classList.add("responsive");
+    }
         useEffect(() => {
             const sections = document.querySelectorAll("div[id]");
         
@@ -64,6 +70,9 @@ const Navbar = () => {
         
 
     return (
+        <>
+        <div className="container-fluid">
+
         <div className="nav">
             <div className="navbar">
                 <a href="#home" className={activeSection === "home" ? "active" : ""}>
@@ -80,6 +89,11 @@ const Navbar = () => {
                 </a>
             </div>
         </div>
+        <div className="bar" >
+            <FontAwesomeIcon icon={faBars} onClick={()=>menubar()}  />
+        </div>
+        </div>
+        </>
     );
 };
 
