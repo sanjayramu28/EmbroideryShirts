@@ -13,26 +13,37 @@ const Navbar = () => {
                 (entries) => {
                     entries.forEach((entry) => {
                         if (entry.isIntersecting) {
+                            if(entry.target.id==="home"){
+                                entry.target.classList.add("homeanimate");
+                                setActiveSection(entry.target.id);
+                            }
                             if (entry.target.id === "about") {
                                 entry.target.classList.add("aboutanimate");
+                                setActiveSection(entry.target.id);
                             } else if (entry.target.id === "services") {
-                                addEventListener("scroll", () => {
-                                if(entry.target.id==="process1"){
-                                    console.log("process1")
-                                }
-                                else if(entry.target.id==="process2"){
-                                    console.log("process2")
-                                }
-                                else if(entry.target.id==="process3"){
-                                    console.log("process3")
-                                }
-                            });
+                            //     addEventListener("scroll", () => {
+                            //     if(entry.target.id==="process1"){
+                            //         console.log("process1")
+                            //     }
+                            //     else if(entry.target.id==="process2"){
+                            //         console.log("process2")
+                            //     }
+                            //     else if(entry.target.id==="process3"){
+                            //         console.log("process3")
+                            //     }
+                            // });
                                 entry.target.classList.add("servicesanimate");
+                                setActiveSection(entry.target.id);
+                            }
+                            else if(entry.target.id==="contact"){
+                                setActiveSection(entry.target.id);  
+                                entry.target.classList.add("contactanimate");
+
                             }
                             console.log("Active Section:", entry.target.id); // Debug log
-                            setActiveSection(entry.target.id);
                         } 
-                        else if (entry.intersectionRatio > 0) {
+                        else  {
+                            entry.target.classList.remove("homeanimate"); // Remove if previously added
                             entry.target.classList.remove("aboutanimate"); // Remove if previously added
                             entry.target.classList.remove("servicesanimate"); // Optional: remove when out of view
                         }

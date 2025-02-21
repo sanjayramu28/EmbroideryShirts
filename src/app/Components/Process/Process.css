@@ -12,6 +12,19 @@
     border-radius: 50px;
 }
 
+
+.servicesanimate .process1:hover,
+.servicesanimate .process2:hover,
+.servicesanimate .process3:hover,
+.servicesanimate .process4:hover{
+    transform: scale(1.1);
+    box-shadow: 8px -1px 20px 0px black;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 10;
+    position: relative;
+}
+
 .process1,.process3{
     transition: 1s ;
     transform: translateX(-100%);

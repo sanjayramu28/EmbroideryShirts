@@ -9,26 +9,28 @@ import Image from 'next/image';
 const Process = () => {
     return (
         <>
-            <div className="process" id='services' style={{overflow:"hidden"}}>
+            <div className="process container-fluid" id='services' style={{ overflow: "hidden", position: "relative" }}>
                 <div className='blurred p-4'>
                     <h1 className='d-flex p-3' style={{ justifyContent: "center" }}>Our Process</h1>
                     <h2>The Art Behind Every Stitch – Our Embroidery Process & Techniques:</h2>
                     <p className='ms-5'>From concept to creation, every embroidered design follows a meticulous process that blends craftsmanship with creativity.</p>
                     <h1>Our Step-by-Step Process:</h1>
                     <ol>
-                        <div className='process1' id='process1'>
+                        <div style={{overflow:"visible",position:"relative"}}>
 
-                        <p>1. Designing the Artwork</p>
-                        <div className='row'>
-                            <ul className='col-md-7 ms-5'>
-                                <li>Every embroidered T-shirt starts with a concept.</li>
-                                <li>Our team of designers creates unique patterns and sketches that are transformed into beautiful embroidered designs.</li>
-                                <li>Digital tools or hand-drawn sketches are used to plan the embroidery pattern</li>
-                            </ul>
-                            <div className='col-md-4 d-flex justify-content-center h-100 align-items-center'>
-                                <Image src={Designproces} alt="Design Process" className='design-img' />
+                            <div className='process1' id='process1'>
+                                <p>1. Designing the Artwork</p>
+                                <div className='row'>
+                                    <ul className='col-md-7 ms-5'>
+                                        <li>Every embroidered T-shirt starts with a concept.</li>
+                                        <li>Our team of designers creates unique patterns and sketches that are transformed into beautiful embroidered designs.</li>
+                                        <li>Digital tools or hand-drawn sketches are used to plan the embroidery pattern</li>
+                                    </ul>
+                                    <div className='col-md-4 d-flex justify-content-center h-100 align-items-center'>
+                                        <Image src={Designproces} alt="Design Process" className='design-img' />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <hr />
 
